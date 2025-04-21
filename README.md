@@ -57,13 +57,26 @@ Initially, the analysis included all countries that experienced a decline in GDP
 
 Given the relatively small sample size (112 rows) compared to the number of predictors (52 variables), overfitting and bias were significant concerns in our analysis. Random Forest, as an ensemble learning method, has an in-built capability for ranking predictors based on their importance. In addition to its feature selection ability, Random Forest is also a non-parametric model and able to capture more complex, non-linear relationships.
 
-Figure 1 illustrates the top 10 predictors identified by Random Forest based on feature importance. Some of the predictor variables ranked most important are the same as in linear regression (% Decline GDP per Capita, C3M_Cancel public events, C2M_Workplace closing). However, Random Forest also ranks other predictors, such as 2019 GDP per Capita as important, while others, such as ConfirmedDeaths, were not considered so.
+Table 2 illustrates the top 10 predictors identified by Random Forest based on feature importance. Some of the predictor variables ranked most important are the same as in linear regression (% Decline GDP per Capita, C3M_Cancel public events, C2M_Workplace closing). However, Random Forest also ranks other predictors, such as 2019 GDP per Capita as important, while others, such as ConfirmedDeaths, were not considered so.
 
-[randomforestchart]()
+### Table 2. Top 10 Predictors According to RandomForest
+| **Feature**                                      | **Importance** |
+|----------------------------------------------|------------|
+| % Decline GDP per Capita                     | 0.259      |
+| C3M_Cancel public events                     | 0.108      |
+| 2019 GDP per Capita                          | 0.055      |
+| C6M_Stay at home requirements                | 0.036      |
+| V1_Vaccine Prioritisation (summary)          | 0.030      |
+| GovernmentResponsiveness_Average             | 0.026      |
+| C6M_Flag                                     | 0.025      |
+| 2019 GDP                                     | 0.024      |
+| C8EV_International travel controls           | 0.023      |
+| C2M_Workplace closing                        | 0.021      |
 
-Table 2 shows a summary comparison between the linear regression model and the Random Forest regression model. Since we are using these models for explanatory purposes, we used goodness of fit measures such as R<sup>2</sup> and Adjusted R<sup>2</sup> instead of performance against a holdout set.
 
-### Table 2. Summary of Goodness of Fit  
+Table 3 shows a summary comparison between the linear regression model and the Random Forest regression model. Since we are using these models for explanatory purposes, we used goodness of fit measures such as R<sup>2</sup> and Adjusted R<sup>2</sup> instead of performance against a holdout set.
+
+### Table 3. Summary of Goodness of Fit  
 
 | **Model** | **R²** | **Adjusted R²** |
 | --- | --- | --- |
