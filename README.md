@@ -17,6 +17,23 @@ Two primary data sources were used:
 
 After merging and filtering, the final dataset includes **112 countries** that experienced a GDP decline during the pandemic period.
 
+Some of the raw datasets used in this project are too large to be stored directly in this repository.
+
+### World Bank Economic Data
+- Source: World Bank World Development Indicators
+- Access: https://databank.worldbank.org/
+- Relevant indicators:
+  - GDP (constant 2015 USD)
+  - GDP per capita (constant 2015 USD)
+  - Population
+
+### Oxford COVID-19 Government Response Tracker (OxCGRT)
+- Source: https://github.com/OxCGRT/covid-policy-tracker
+- File used: OxCGRT_compact_national_v1.csv
+
+After downloading the raw files, place them in this directory and run `data_processing_modeling.ipynb`.
+
+
 ---
 
 ## Problem Framing & Target Definition
